@@ -28,3 +28,4 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 [aws-stepfunctions-examples](https://github.com/aws-samples/aws-stepfunctions-examples)
 
+[AWS Step Functions을 통한 마이크로서비스 오케스트레이션 - 강세용:: AWS 현대적 애플리케이션 개발](https://www.youtube.com/watch?v=sRXvADi4hmw)
