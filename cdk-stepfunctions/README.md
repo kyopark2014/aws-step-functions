@@ -72,3 +72,8 @@ $ curl -X POST 'https://sample26rf.execute-api.ap-northeast-2.amazonaws.com/prod
  -H 'Content-Type: application/json'
 "Hello back to you!"
 ```
+
+
+## 인프라 삭제
+
+테스트가 종료가 되면 "cdk destroy"로 인프라를 삭제합니다. 
