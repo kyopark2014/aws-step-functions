@@ -27,6 +27,8 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 ### States
 
 - [Task](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-task-state.html): Execute work
+This represents an operation to execute, it's integrable directly with a Lambda Invoke, or you can specify parameters that call a specific AWS service
+
 - [Choice](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-choice-state.html): Add branching logic
 - [Wait](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-wait-state.html): Add a timed delay
 - [Parallel](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html):  Execute branches in parallel
