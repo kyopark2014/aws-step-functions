@@ -61,7 +61,7 @@ https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-nort
 
 5) [Configure stack options]은 기본값을 그대로 유지하고 [Next]를 선택합니다. 
 
-6) [Review stepFunction1]에서 [Create stack]을 선택하여 생성을 시작합니다. 생성이 완료되면 아래와 같이 "CREATE_COMLETE"로 status가 변경됩니다. 
+6) [Review stepFunction1]에서 [Create stack]을 선택하여 생성을 시작합니다. 생성이 완료되면 아래와 같이 "CREATE_COMPLETE"로 status가 변경됩니다. 
 
 ![noname](https://user-images.githubusercontent.com/52392004/174423681-a34eb137-51a5-4882-ba60-65f2f75eff7e.png)
 
