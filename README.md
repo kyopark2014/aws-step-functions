@@ -26,14 +26,14 @@ To-DO
 
 #### States
 
-- Task: Execute work
-- Choice: Add branching logic
-- Wait: Add a timed delay
-- Parallel:  Execute branches in parallel
+- [Task](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-task-state.html): Execute work
+- [Choice](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-choice-state.html): Add branching logic
+- [Wait](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-wait-state.html): Add a timed delay
+- [Parallel](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html):  Execute branches in parallel
 - [Map](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-map-state.html): Process each of an input array's items with a state machine
-- Success: Signal a successful execution and stop
-- Fail: Signal a failed execution and stop
-- Pass: Pass input to output
+- [Success](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-succeed-state.html): Signal a successful execution and stop
+- [Fail](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-fail-state.html): Signal a failed execution and stop
+- [Pass](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-pass-state.html): Pass input to output
 
 #### Integration syntax
 
