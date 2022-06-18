@@ -51,6 +51,9 @@ arn:aws:sates:::aws-sdk:ec2:describeInstances
 
 [Express Workflow](https://github.com/kyopark2014/aws-step-functions/blob/main/express.md)에서는 express로 workflow 구성하는것에 대해 설명합니다. 
 
+## 인프라 생성하기 
+
+[CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/tree/main/cloudformation)를 따라서 CloudFormation으로 인프라 생성이 가능합니다.
 
 ## References
 
