@@ -64,7 +64,7 @@ arn:aws:sates:::aws-sdk:ec2:describeInstances
 
 ### Amazon States Language (ASL)
 
-Step Function에서는 ASL을 이용하여 workflow를 생성합니다. 
+[Step Function에서는 ASL](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html)을 이용하여 workflow를 생성합니다. 
 
 
 
