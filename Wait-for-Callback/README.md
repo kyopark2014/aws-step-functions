@@ -20,3 +20,10 @@
 ## 실행결과 
 
 [CloudFormation을 이용하여 Step Function으로 Callback 구현](https://github.com/kyopark2014/aws-step-functions/blob/main/Wait-for-Callback/callback-cloudformation.md)에서 상세 동작에 대해 설명합니다. 
+
+
+## Task Token Example
+
+[Task Token Example](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token)와 같이 Credit check한 결과가 SQS에 도착할때까지 기다리다가, 도착하면, token을 step function으로 전달합니다. 
+
+![image](https://user-images.githubusercontent.com/52392004/174439709-2508369f-264c-4989-bd2d-26cee7e5f96b.png)
