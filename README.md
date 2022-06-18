@@ -33,6 +33,11 @@ States
 - Fail: Signal a failed execution and stop
 - Pass: Pass input to output
 
+Express
+
+<img width="829" alt="image" src="https://user-images.githubusercontent.com/52392004/174420474-1384b025-d6ca-4c36-803c-4d88f80c0615.png">
+
+
 ## References
 
 [aws-stepfunctions-examples](https://github.com/aws-samples/aws-stepfunctions-examples)
