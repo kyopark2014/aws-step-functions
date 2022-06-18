@@ -17,6 +17,11 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 [The AWS Step Functions Workshop](https://catalog.workshops.aws/stepfunctions/en-US/)을 이용해 Workshop을 해볼수 있습니다. 
 
+
+## Others
+
+Amazon States Language (ASL)
+
 ## References
 
 [aws-stepfunctions-examples](https://github.com/aws-samples/aws-stepfunctions-examples)
