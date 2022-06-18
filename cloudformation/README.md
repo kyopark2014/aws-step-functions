@@ -22,6 +22,8 @@
       Path: '/'
 ```
 
+아래와 같이 "TimerStateMachine"을 생성하는데 "Type"이 "Wait"이므로 "timer_seconds"동안 대기하는 "Wait for Timer"를 생성하게 됩니다.
+
 ```java
 TimerStateMachine:
     Type: 'AWS::StepFunctions::StateMachine'
