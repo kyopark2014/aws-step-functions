@@ -35,7 +35,7 @@ States
 
 Express
 
-<img width="829" alt="image" src="https://user-images.githubusercontent.com/52392004/174420474-1384b025-d6ca-4c36-803c-4d88f80c0615.png">
+[Express Workflow](https://github.com/kyopark2014/aws-step-functions/blob/main/express.md)에서는 express로 workflow 구성하는것에 대해 설명합니다. 
 
 
 ## References
