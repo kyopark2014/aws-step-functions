@@ -20,9 +20,11 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 ## Others
 
-Amazon States Language (ASL)
+#### Amazon States Language (ASL)
 
-States
+To-DO
+
+#### States
 
 - Task: Execute work
 - Choice: Add branching logic
@@ -33,7 +35,7 @@ States
 - Fail: Signal a failed execution and stop
 - Pass: Pass input to output
 
-Express
+#### Express Workflow
 
 [Express Workflow](https://github.com/kyopark2014/aws-step-functions/blob/main/express.md)에서는 express로 workflow 구성하는것에 대해 설명합니다. 
 
