@@ -22,7 +22,7 @@
       Path: '/'
 ```
 
-아래와 같이 "TimerStateMachine"을 생성하는데, "States"에는 "Wait for Timer"와 "Success"가 있습니다. "Wait for Timer"로 시작하는데, "Type"이 "Wait"이므로 "timer_seconds" 변수로 받은 "SecondPath"동안 대기하고 다음으로 "Success" State로 이동하게 됩니다. 
+아래와 같이 "TimerStateMachine"을 생성하는데, "States"에는 "Wait for Timer"와 "Success"가 있습니다. "Wait for Timer"로 시작하는데, "Type"이 "Wait"이므로 "timer_seconds" 변수로 받은 "SecondPath"동안 대기하고 나서, 다음 state인 "Success"로 이동하게 됩니다. 
 
 ```java
 TimerStateMachine:
