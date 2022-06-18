@@ -24,5 +24,8 @@ https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-nort
 
 7) [Step Functions의 Console](https://ap-northeast-2.console.aws.amazon.com/states/home?region=ap-northeast-2#/statemachines)로 이동하여 상태를 확인 합니다. 
 
-![noname](https://user-images.githubusercontent.com/52392004/174423714-62bed9e4-5d31-43f8-bcc1-8de016670a6f.png)
+![noname](https://user-images.githubusercontent.com/52392004/174423763-764674ea-637c-432b-9597-3c9c81e6c237.png)
 
+8) [Edit]를 선택하면 아래와 같이 생성된 Step Function을 확인 할 수 있습니다. 
+
+![noname](https://user-images.githubusercontent.com/52392004/174423807-e1daaa4f-586c-433d-b34e-07732b68bb57.png)
