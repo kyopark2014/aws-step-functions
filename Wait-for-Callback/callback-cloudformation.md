@@ -118,7 +118,10 @@ exports.lambda_handler = async(event, context, callback) => {
 
 Lambda의 로그는 아래와 같습니다.
 
-![image](https://user-images.githubusercontent.com/52392004/174438005-430c958b-c96d-4230-9ce5-1203876a36ec.png)
+![noname](https://user-images.githubusercontent.com/52392004/174439870-9f9d10d5-797f-4a57-87e5-cc5f6d0ad1be.png)
+
+
+
 
 Lambda에 수신된 메시지 body는 아래와 같이 "MessageTitle"과 TaskToken입니다.
 
