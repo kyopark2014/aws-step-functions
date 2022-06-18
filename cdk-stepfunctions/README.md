@@ -16,6 +16,39 @@
 $ git clone https://github.com/kyopark2014/aws-step-functions
 ```
 
+이대 [cdk-stepfunctions-stack.ts](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/lib/cdk-stepfunctions-stack.ts)의 내용은 아래와 같습니다. 
+
+```typescript
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { Construct } from 'constructs';
+
+import * as cdk from 'aws-cdk-lib';
+import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
+import * as apigateway from 'aws-cdk-lib/aws-apigateway';
+
+export class CdkStepfunctionsStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
+    super(scope, id, props);
+
+    const startState = new stepfunctions.Pass(this, 'PassState', {
+      result: { value: 'Hello back to you!' },
+    })
+    
+    const stateMachine = new stepfunctions.StateMachine(this, 'MyStateMachine', {
+      definition: startState,
+      stateMachineType: stepfunctions.StateMachineType.EXPRESS,
+    });
+
+    const api = new apigateway.StepFunctionsRestApi(this, 'StepFunctionsRestApi', { 
+      stateMachine: stateMachine 
+    });
+  }
+}
+```
+
+MyStateMachine 이름으로 Step Function을 생성하고, API Gateway에서 Step Function을 직접 호출하도록 되어 있습니다. 
+
+
 2) CDK로 인프라를 생성합니다. 
 
 ```c
@@ -27,3 +60,5 @@ $ cdk deploy
 
 
 ![image](https://user-images.githubusercontent.com/52392004/174426911-eaa7728c-3644-4418-b797-bbcfaf3e11dc.png)
+
+
