@@ -29,7 +29,7 @@ export class CdkStepfunctionsStack extends Stack {
 }
 ```
 
-### 실행 결과 
+### 생성된 Step Function
 
 아래와 같이 "MyStateMachine" 이름을 가지는 Step Function이 생성되었습니다. 
 
@@ -39,3 +39,9 @@ export class CdkStepfunctionsStack extends Stack {
 
 ![noname](https://user-images.githubusercontent.com/52392004/174426401-8387fb59-7ce6-406f-996e-872c07439cbc.png)
 
+
+### 실행
+
+[Start execution]으로 실행시 아래처럼 기본값으로 실행하면 "Hello back to you!"가 리턴값으로 전달됩니다. 
+
+![noname](https://user-images.githubusercontent.com/52392004/174426494-ac8e50b1-ea7d-40a4-9564-3dc12d2bc0d2.png)
