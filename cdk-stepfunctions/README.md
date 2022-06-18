@@ -62,3 +62,13 @@ $ cdk deploy
 ![image](https://user-images.githubusercontent.com/52392004/174426911-eaa7728c-3644-4418-b797-bbcfaf3e11dc.png)
 
 
+## 실행결과
+
+아래와 같이 API Gateway Endpoint로 htts request를 호출하면, Step Function이 실행되면서, 결과로 "Hello back to you!"를 리턴하는것을 확인 할 수 있습니다. 
+
+```c
+$ curl -X POST 'https://sample26rf.execute-api.ap-northeast-2.amazonaws.com/prod' \
+ -d '{"key":"Hello Step Functions"}' \
+ -H 'Content-Type: application/json'
+"Hello back to you!"
+```
