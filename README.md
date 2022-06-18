@@ -35,9 +35,7 @@ To-DO
 - Fail: Signal a failed execution and stop
 - Pass: Pass input to output
 
-#### Integration 
-
-Integration syntax: 
+#### Integration syntax
 
 ```c
 arn:aws:states:::aws-sdk:serviceName:apiAction.[serviceIntegrationPattern]
