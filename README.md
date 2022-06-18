@@ -35,6 +35,20 @@ To-DO
 - Fail: Signal a failed execution and stop
 - Pass: Pass input to output
 
+#### Integration 
+
+Integration syntax: 
+
+```c
+arn:aws:states:::aws-sdk:serviceName:apiAction.[serviceIntegrationPattern]
+```
+
+예제는 아래와 같습니다. 
+
+```c
+arn:aws:sates:::aws-sdk:ec2:describeInstances
+```
+
 #### Express Workflow
 
 [Express Workflow](https://github.com/kyopark2014/aws-step-functions/blob/main/express.md)에서는 express로 workflow 구성하는것에 대해 설명합니다. 
