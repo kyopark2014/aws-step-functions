@@ -22,7 +22,7 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 #### Amazon States Language (ASL)
 
-To-DO
+Step Function에서는 ASL을 이용하여 workflow를 생성합니다. 
 
 #### States
 
@@ -64,6 +64,8 @@ arn:aws:sates:::aws-sdk:ec2:describeInstances
 ## 인프라 생성하기 
 
 [CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/tree/main/cloudformation)를 따라서 CloudFormation으로 인프라 생성이 가능합니다.
+
+[CDK - Step Functions](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/README.md)에서는 AWS CDK로 Step Function과 API Gateway를 생성하여 https API로 Step Function을 호출할 수 있음을 보여줍니다. 
 
 ## References
 
