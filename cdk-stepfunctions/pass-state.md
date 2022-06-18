@@ -35,9 +35,7 @@ export class CdkStepfunctionsStack extends Stack {
 
 ![noname](https://user-images.githubusercontent.com/52392004/174426329-f448940c-e065-4019-8d4b-db1da292507f.png)
 
-
 이때, 생성된 Step Function의 내용은 아래와 같습니다. 
 
-![image](https://user-images.githubusercontent.com/52392004/174426363-6a5ccf4b-2978-442c-b778-4a0855b0a0b6.png)
-
+![noname](https://user-images.githubusercontent.com/52392004/174426401-8387fb59-7ce6-406f-996e-872c07439cbc.png)
 
