@@ -31,12 +31,32 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 This represents an operation to execute, it's integrable directly with a Lambda Invoke, or you can specify parameters that call a specific AWS service
 
 - [Choice](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-choice-state.html): Add branching logic
+
+It is possible to configure a condition that permits the user to change execution flow based on the output of the previous state
+
 - [Wait](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-wait-state.html): Add a timed delay
+
+ It's possible to suspend the machine execution for a specific time
+  
 - [Parallel](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html):  Execute branches in parallel
+
+This permits the execution of a state set that will be executed in parallel, using a single input value.
+
 - [Map](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-map-state.html): Process each of an input array's items with a state machine
+
+This permits the execution of a state set, using an array of input for each state.
+
 - [Success](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-succeed-state.html): Signal a successful execution and stop
+
+When a machine execution finishes with success
+
 - [Fail](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-fail-state.html): Signal a failed execution and stop
+
+When a machine execution finishes with some errors
+
 - [Pass](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-pass-state.html): Pass input to output
+
+This state passes its input to its output, without performing work. Pass states are useful when constructing and debugging state machines.
 
 ### Integration syntax
 
