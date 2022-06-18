@@ -4,7 +4,7 @@
 
 [Module 4 - Wait for a Callback with the Task Token](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)에서는 Lambda, SQS, SNS, Step Function을 생성합니다. 
 
-## 생성된 SQS 
+## SQS 
 
 아래와 같이 Step Function Callback을 위해 SQS와 SQS (DLQ)가 생성됩니다. SQS는 메시지를 받으면, Lambda를 Trigger 하도록 되어 있습니다. 
 
@@ -19,9 +19,9 @@ WaitForCallbackStateMachine를 그래프로 표현하면 아래와 같습니다.
 
 여기서 WaitForCallbackStateMachine은 아래와 같은 Amazon States Language (ASL)로 표현됩니다. 
 
-[Start]하면 SQS Task인 [Start Task And Wait For Callback]에서 시작합니다. 이것은 메시지와 Token을 받을때까지 대기하다가 메시지를 받으면 "Notify Success" State로 이동합니다. 
+[Start]하면 SQS Task인 "Start Task And Wait For Callback"에서 시작합니다. 이것은 메시지와 Token을 받을때까지 대기하다가 메시지를 받으면 "Notify Success" State로 이동합니다. 
 
-이때, SNS로 "Callback received"라는 메시지를 전송됩니다. 
+이때, SNS로 "Callback received"라는 메시지를 전송합니다. 
 
 ```java
 {
@@ -69,6 +69,7 @@ WaitForCallbackStateMachine를 그래프로 표현하면 아래와 같습니다.
 ```
 
 
+
 ## Lambda 
 
 SQS는 Lambda를 Trigger 합니다. 
@@ -77,6 +78,8 @@ SQS는 Lambda를 Trigger 합니다.
 
 
 CloudFormation 소스인 [Module_4.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)에서 Lambda code를 아래와 같이 좀더 많은 로그를 볼 수 있도록 수정하였습니다. 
+
+event를 받으면 Record에서 token을 꺼내서 message와 함게 parameter로 Step Functions에 전달합니다. 
 
 ```java
 console.log('Loading function');
