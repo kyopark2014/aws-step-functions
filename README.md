@@ -22,6 +22,14 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 Amazon States Language (ASL)
 
+States
+
+- Task: Execute work
+- Choice: Add branching logic
+- Wait Add a timed delay
+- Parallel:  Execute branches in parallel
+- Map: 
+
 ## References
 
 [aws-stepfunctions-examples](https://github.com/aws-samples/aws-stepfunctions-examples)
