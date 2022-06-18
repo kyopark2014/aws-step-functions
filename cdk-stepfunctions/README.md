@@ -16,7 +16,7 @@
 $ git clone https://github.com/kyopark2014/aws-step-functions
 ```
 
-이대 [cdk-stepfunctions-stack.ts](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/lib/cdk-stepfunctions-stack.ts)의 내용은 아래와 같습니다. 
+이떄, [cdk-stepfunctions-stack.ts](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/lib/cdk-stepfunctions-stack.ts)의 내용은 아래와 같습니다. 
 
 ```typescript
 import { Stack, StackProps } from 'aws-cdk-lib';
