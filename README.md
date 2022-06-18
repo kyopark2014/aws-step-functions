@@ -65,6 +65,8 @@ arn:aws:sates:::aws-sdk:ec2:describeInstances
 
 [CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/tree/main/cloudformation)를 따라서 CloudFormation으로 인프라 생성이 가능합니다.
 
+[CDK - Step Functions](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/README.md)에서는 AWS CDK로 Step Function과 API Gateway를 생성하여 https API로 Step Function을 호출할 수 있음을 보여줍니다. 
+
 ## References
 
 [aws-stepfunctions-examples](https://github.com/aws-samples/aws-stepfunctions-examples)
