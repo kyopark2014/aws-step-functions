@@ -9,6 +9,5 @@
 
 2) 이때 SQS는 메시지와 Token을 Lambda 함수에 전달합니다. 
 
-![image](https://user-images.githubusercontent.com/52392004/174436710-a5c3beee-a468-4f6c-beca-82f3268c841d.png)
-
+![image](https://user-images.githubusercontent.com/52392004/174439241-118d6aef-f5f1-4995-bbb4-276e2ff4587e.png)
 
