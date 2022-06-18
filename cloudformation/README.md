@@ -1,5 +1,7 @@
 # CloudFormation으로 Step Functions 만들기
 
+## Step Functions 생성 
+
 [Workshop Module1](https://catalog.workshops.aws/stepfunctions/en-US/module-1)을 참조하였습니다. 
 
 1) [module_1.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_1.yml) 파일을 다운로드 합니다. 
@@ -29,3 +31,20 @@ https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-nort
 8) [Edit]를 선택하면 아래와 같이 생성된 Step Function을 확인 할 수 있습니다. 
 
 ![noname](https://user-images.githubusercontent.com/52392004/174423807-e1daaa4f-586c-433d-b34e-07732b68bb57.png)
+
+
+## 실행해 보기
+
+1) [Step Functions Console](https://ap-northeast-2.console.aws.amazon.com/states/home?region=ap-northeast-2#/statemachines)에서 생성한 Step Function을 선택합니다. 
+
+![noname](https://user-images.githubusercontent.com/52392004/174423980-60aa3af0-83e9-41e6-8351-8034cfd7b945.png)
+
+2) [Start execution]을 선택한 후에 아래의 json을 복사해서 [input]에 붙여 넣기를 합니다. 이후 [Start execution]을 선택합니다. 
+
+- 입력
+
+{ "timer_seconds": 5 }
+
+입력한 
+![noname](https://user-images.githubusercontent.com/52392004/174424084-b4c2e234-28bc-46fe-841e-56cbc47d9e28.png)
+
