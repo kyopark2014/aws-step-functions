@@ -13,18 +13,18 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 [Step Function Case Study](https://github.com/kyopark2014/aws-step-functions/blob/main/case-study.md)에서는 Step Fucntions 활용방안에 대해 설명합니다. 
 
-## Workshop
 
-[The AWS Step Functions Workshop](https://catalog.workshops.aws/stepfunctions/en-US/)을 이용해 Workshop을 해볼수 있습니다. 
+## 인프라 생성하기 
+
+[CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/tree/main/cloudformation)를 따라서 CloudFormation으로 인프라 생성이 가능합니다.
+
+[CDK - Step Functions](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/README.md)에서는 AWS CDK로 Step Function과 API Gateway를 생성하여 https API로 Step Function을 호출할 수 있음을 보여줍니다. 
 
 
-## Others
+## Summary
 
-#### Amazon States Language (ASL)
 
-Step Function에서는 ASL을 이용하여 workflow를 생성합니다. 
-
-#### States
+### States
 
 - [Task](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-task-state.html): Execute work
 - [Choice](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-choice-state.html): Add branching logic
@@ -35,7 +35,7 @@ Step Function에서는 ASL을 이용하여 workflow를 생성합니다.
 - [Fail](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-fail-state.html): Signal a failed execution and stop
 - [Pass](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-pass-state.html): Pass input to output
 
-#### Integration syntax
+### Integration syntax
 
 ```c
 arn:aws:states:::aws-sdk:serviceName:apiAction.[serviceIntegrationPattern]
@@ -47,25 +47,26 @@ arn:aws:states:::aws-sdk:serviceName:apiAction.[serviceIntegrationPattern]
 arn:aws:sates:::aws-sdk:ec2:describeInstances
 ```
 
-#### Express Workflow
+### Express Workflow
 
 [Express Workflow](https://github.com/kyopark2014/aws-step-functions/blob/main/express.md)에서는 express로 workflow 구성하는것에 대해 설명합니다. 
 
 
-#### Synchronous
+### Synchronous
 
 [Execute synchronous task](https://catalog.workshops.aws/stepfunctions/en-US/module-3/step-4)와 같이 Resouce arn에 ".sync"를 붙여서, synchronous task를 생성 할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/52392004/174425179-1e6f12b5-207e-41f1-b74e-56c5e5322fdd.png)
 
+### Workshop
+
+[The AWS Step Functions Workshop](https://catalog.workshops.aws/stepfunctions/en-US/)을 이용해 Workshop을 해볼수 있습니다. 
+
+### Amazon States Language (ASL)
+
+Step Function에서는 ASL을 이용하여 workflow를 생성합니다. 
 
 
-
-## 인프라 생성하기 
-
-[CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/tree/main/cloudformation)를 따라서 CloudFormation으로 인프라 생성이 가능합니다.
-
-[CDK - Step Functions](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/README.md)에서는 AWS CDK로 Step Function과 API Gateway를 생성하여 https API로 Step Function을 호출할 수 있음을 보여줍니다. 
 
 ## References
 
