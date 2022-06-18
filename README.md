@@ -13,6 +13,10 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 [Step Function Case Study](https://github.com/kyopark2014/aws-step-functions/blob/main/case-study.md)에서는 Step Fucntions 활용방안에 대해 설명합니다. 
 
+## Workshop
+
+[The AWS Step Functions Workshop](https://catalog.workshops.aws/stepfunctions/en-US/)을 이용해 Workshop을 해볼수 있습니다. 
+
 ## References
 
 [aws-stepfunctions-examples](https://github.com/aws-samples/aws-stepfunctions-examples)
