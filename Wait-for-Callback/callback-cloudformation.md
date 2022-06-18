@@ -3,3 +3,39 @@
 ## CloudFormation
 
 [Module 4 - Wait for a Callback with the Task Token](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)에서는 Lambda, SQS, SNS, Step Function을 생성합니다. 
+
+
+## Lambda 
+
+SQS는 Lambda를 Trigger 합니다. 
+
+![image](https://user-images.githubusercontent.com/52392004/174436686-688f8aaa-0717-452d-8fae-762e1dbad5b9.png)
+
+
+```java
+console.log('Loading function');
+
+var AWS = require('aws-sdk');
+var stepfunctions = new AWS.StepFunctions({apiVersion: '2016-11-23'});
+
+exports.lambda_handler = async(event, context, callback) => {
+
+    for (const record of event.Records) {
+        const messageBody = JSON.parse(record.body);
+        const taskToken = messageBody.TaskToken;
+
+        const params = {
+            output: "\"Callback task completed successfully.\"",
+            taskToken: taskToken
+        };
+
+        /**
+        * uncomment the lines below and redeploy the Lambda function
+        */
+        // console.log(`Calling Step Functions to complete callback task with params ${JSON.stringify(params)}`);
+        // let response = await stepfunctions.sendTaskSuccess(params).promise();
+    }
+};
+```
+
+
