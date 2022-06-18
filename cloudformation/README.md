@@ -2,7 +2,7 @@
 
 [Workshop Module1](https://catalog.workshops.aws/stepfunctions/en-US/module-1)을 참조하였습니다. 
 
-1) [module_1.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module1.yml) 파일을 다운로드 합니다. 
+1) [module_1.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_1.yml) 파일을 다운로드 합니다. 
 
 2) CloudFormation Console로 이동합니다. 
 
