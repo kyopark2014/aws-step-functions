@@ -100,3 +100,10 @@ https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-nort
 
 ![image](https://user-images.githubusercontent.com/52392004/174424360-cdd0fbf7-5321-4d55-a987-9043aa326a16.png)
 
+
+## 삭제
+
+아래와 같이 Console에서 Delete를 선택하여 삭제할 수 있습니다. 
+
+![image](https://user-images.githubusercontent.com/52392004/174424977-d87d0eaa-8e71-46ae-887e-156f890e5b1d.png)
+
