@@ -76,6 +76,8 @@ SQS는 Lambda를 Trigger 합니다.
 ![image](https://user-images.githubusercontent.com/52392004/174436686-688f8aaa-0717-452d-8fae-762e1dbad5b9.png)
 
 
+CloudFormation 소스인 [Module_4.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)에서 Lambda code를 아래와 같이 좀더 많은 로그를 볼 수 있도록 수정하였습니다. 
+
 ```java
 console.log('Loading function');
 
@@ -83,8 +85,11 @@ var AWS = require('aws-sdk');
 var stepfunctions = new AWS.StepFunctions({apiVersion: '2016-11-23'});
 
 exports.lambda_handler = async(event, context, callback) => {
+    console.log("event: %j", event)
 
-    for (const record of event.Records) {
+    for (let i=0;i<event.Records.length;i++) {
+        let record = event.Records[i];
+        
         const messageBody = JSON.parse(record.body);
         const taskToken = messageBody.TaskToken;
 
@@ -93,13 +98,16 @@ exports.lambda_handler = async(event, context, callback) => {
             taskToken: taskToken
         };
 
-        /**
-        * uncomment the lines below and redeploy the Lambda function
-        */
-        // console.log(`Calling Step Functions to complete callback task with params ${JSON.stringify(params)}`);
-        // let response = await stepfunctions.sendTaskSuccess(params).promise();
+        console.log(`Calling Step Functions to complete callback task with params ${JSON.stringify(params)}`);
+        try {
+            let response = await stepfunctions.sendTaskSuccess(params).promise();
+            console.log("response: %j", response);
+        } catch(err) {
+            console.log('err:'+err);
+        }
     }
 };
+
 ```
 
 
