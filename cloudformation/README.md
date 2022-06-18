@@ -41,10 +41,13 @@ https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-nort
 
 2) [Start execution]을 선택한 후에 아래의 json을 복사해서 [input]에 붙여 넣기를 합니다. 이후 [Start execution]을 선택합니다. 
 
-- 입력
+입력할 값은 아래와 같습니다.
 
+```java
 { "timer_seconds": 5 }
+```
 
-입력한 
+입력후 화면은 아래와 같습니다. 
+
 ![noname](https://user-images.githubusercontent.com/52392004/174424084-b4c2e234-28bc-46fe-841e-56cbc47d9e28.png)
 
