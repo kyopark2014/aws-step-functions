@@ -94,7 +94,7 @@ https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-nort
 
 ![noname](https://user-images.githubusercontent.com/52392004/174424242-96713460-ebb3-4869-b346-26d388d75985.png)
 
-IAM의 Role에서 "StatesExecutionRole"을 검색하면 
+IAM의 Role에서 "StatesExecutionRole"을 검색하면 아래와 같은 Role이 생성되어 있음을 확인 할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/52392004/174424360-cdd0fbf7-5321-4d55-a987-9043aa326a16.png)
 
