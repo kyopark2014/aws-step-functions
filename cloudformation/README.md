@@ -6,6 +6,45 @@
 
 1) [module_1.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_1.yml) 파일을 다운로드 합니다. 
 
+"module_1.yml"에서는 아래와 같이 "StatesExecutionRole"을 생성합니다. 
+
+```java
+  StatesExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: 'Allow'
+            Principal:
+              Service: states.amazonaws.com
+            Action: 'sts:AssumeRole'
+      Path: '/'
+```
+
+```java
+TimerStateMachine:
+    Type: 'AWS::StepFunctions::StateMachine'
+    Properties:
+      DefinitionString: |-
+        {
+          "Comment": "An example of the Amazon States Language for scheduling a task.",
+          "StartAt": "Wait for Timer",
+          "States": {
+            "Wait for Timer": {
+              "Type": "Wait",
+              "SecondsPath": "$.timer_seconds",
+              "Next": "Success"
+            },
+            "Success": {
+              "Type": "Succeed"
+            }
+          }
+        }
+      RoleArn: !GetAtt [StatesExecutionRole, Arn]
+```
+
+
 2) CloudFormation Console로 이동합니다. 
 
 https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/create/template
@@ -55,4 +94,7 @@ https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-nort
 
 ![noname](https://user-images.githubusercontent.com/52392004/174424242-96713460-ebb3-4869-b346-26d388d75985.png)
 
+IAM의 Role에서 "StatesExecutionRole"을 검색하면 
+
+![image](https://user-images.githubusercontent.com/52392004/174424360-cdd0fbf7-5321-4d55-a987-9043aa326a16.png)
 
