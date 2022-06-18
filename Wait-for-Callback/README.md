@@ -2,7 +2,7 @@
 
 여기서는 [Module 4 - Wait for a Callback with the Task Token](https://catalog.workshops.aws/stepfunctions/en-US/module-4)에 대해 소개합니다.
 
-어떤 task는 사람의 승인(human approval)이나 lagacy system의 호출하여야 해서 바로 응답을 받지 못할 수 있습니다. 이와 같이 task는 "SendTaskSuccess" 또는 "SendTaskFailure"가 token을 받을때까지 기다립니다. 상세한것은 [Optimized integrations for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html)을 참조하십시요. 
+어떤 task는 사람의 승인(human approval)이나 lagacy system의 호출하여야 해서 바로 응답을 받지 못할 수 있습니다. 이와 같이 task는 "SendTaskSuccess" 또는 "SendTaskFailure"로 token을 받을때까지 기다립니다. 상세한것은 [Optimized integrations for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html)을 참조하십시요. 
 
 - [Wait for a job to complete (.sync).](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-sync)
 
