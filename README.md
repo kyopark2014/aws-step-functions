@@ -28,7 +28,10 @@ States
 - Choice: Add branching logic
 - Wait Add a timed delay
 - Parallel:  Execute branches in parallel
-- Map: 
+- Map: Process each of an input array's items with a state machine
+- Success: Signal a successful execution and stop
+- Fail: Signal a failed execution and stop
+- Pass: Pass input to output
 
 ## References
 
