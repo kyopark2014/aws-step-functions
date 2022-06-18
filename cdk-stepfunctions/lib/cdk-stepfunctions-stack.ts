@@ -3,6 +3,7 @@ import { Construct } from 'constructs';
 
 import * as cdk from 'aws-cdk-lib';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
+import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 
 export class CdkStepfunctionsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -13,8 +14,12 @@ export class CdkStepfunctionsStack extends Stack {
     })
     
     const stateMachine = new stepfunctions.StateMachine(this, 'MyStateMachine', {
-        definition: startState,
-        stateMachineType: stepfunctions.StateMachineType.EXPRESS,
+      definition: startState,
+      stateMachineType: stepfunctions.StateMachineType.EXPRESS,
+    });
+
+    const api = new apigateway.StepFunctionsRestApi(this, 'StepFunctionsRestApi', { 
+      stateMachine: stateMachine 
     });
   }
 }
