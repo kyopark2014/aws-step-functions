@@ -51,3 +51,8 @@ https://ap-northeast-2.console.aws.amazon.com/cloudformation/home?region=ap-nort
 
 ![noname](https://user-images.githubusercontent.com/52392004/174424084-b4c2e234-28bc-46fe-841e-56cbc47d9e28.png)
 
+아래와 같이 5초후에 "Success"로 상태가 변경되었습니다. 
+
+![noname](https://user-images.githubusercontent.com/52392004/174424242-96713460-ebb3-4869-b346-26d388d75985.png)
+
+
