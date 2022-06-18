@@ -22,7 +22,7 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 #### Amazon States Language (ASL)
 
-To-DO
+Step Function에서는 ASL을 이용하여 workflow를 생성합니다. 
 
 #### States
 
