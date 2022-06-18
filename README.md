@@ -28,7 +28,7 @@ To-DO
 
 - Task: Execute work
 - Choice: Add branching logic
-- Wait Add a timed delay
+- Wait: Add a timed delay
 - Parallel:  Execute branches in parallel
 - Map: Process each of an input array's items with a state machine
 - Success: Signal a successful execution and stop
