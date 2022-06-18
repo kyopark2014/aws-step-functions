@@ -119,3 +119,9 @@ exports.lambda_handler = async(event, context, callback) => {
 Lambda의 로그는 아래와 같습니다.
 
 ![image](https://user-images.githubusercontent.com/52392004/174438005-430c958b-c96d-4230-9ce5-1203876a36ec.png)
+
+Lambda에 수신된 메시지 body는 아래와 같이 "MessageTitle"과 TaskToken입니다.
+
+"MessageTitle":"Task started by Step Functions. Waiting for callback with task token."
+
+"TaskToken":"AAAAKgAAAAIAAAAAAAAAAYOmu3CinXAhxdjd6WrE3AdAPQnh2//jmggk+KVSS0VklluVkdEV3x8TCipcGchQQiVSZ9At/Ll7B16sifCnP8lUzDjOH944YViLs2q9qt1s1GxiuNAaJdGbbEyNaa3zGTK7niomWunE0xN9v/2eiaJdEaa4D4PawKSe0Dh13YUGn0+bF0S8qVcKAJTvFs1tky3CsxZm93yAIpvM+AmSviy67OanhJJGnj5/+yDKEy0TF/onYQKJGBmukHEBfn2/rLqGisX4Zdd1MQ9qvdEB1KEPhw9eyxvRq+vlat3cuLDsJVLYHKAdUN73rJokcpNTqpH/slW3QGEyzMYS0Khs5hBKlEqD4uTrMKxj+NK7PizNqx67+v80yC2VtXEnVAp5SYi7WaWKgBi6vIRrfmbXN+2yLQIKsWppRTkAC2Don6ovv/4KytH1h3Mn+VYPm6bOsyEOx/Zm6n+P6Yk0Jzxzhca+Npx5vTZn9RrrCcRq20mxkfqwkTFCaWcrNbgJAuU52VikUQmQVLinz1CYx3n/IZuLnVt7TycR1XwQqFPICs8GuF7mHYNHyFgItLEg63h+XEi2tCSNQXEi8sx3fX+NzL7H/TuCBtfx5jhf9N+4Wq44xZe8Nl1aeMNCH/OzTqAydZbk9OJwhIMO4Bqh0ct+jxKRDtZ5q+jFS+ptYwDYTy65"
