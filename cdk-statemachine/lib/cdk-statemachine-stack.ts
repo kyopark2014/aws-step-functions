@@ -18,8 +18,8 @@ export class CdkStatemachineStack extends Stack {
     // Lambda to generate a random number
     const generateRandomNumber = new lambda.Function(this, 'GenerateRandomNumber', {
       runtime: lambda.Runtime.NODEJS_14_X,
-      code: lambda.Code.fromAsset('lambda-for-statemachine'),
-      handler: 'generateRandomNumber.handler',
+      code: lambda.Code.fromAsset('lambda-for-generateRandomNumber'),
+      handler: 'index.handler',
       timeout: cdk.Duration.seconds(3),
       environment: {
       }
@@ -34,8 +34,8 @@ export class CdkStatemachineStack extends Stack {
     // Lambda function called if the generated number is greater than the expected number
     const functionGreaterThan = new lambda.Function(this, "NumberGreaterThan", {
       runtime: lambda.Runtime.NODEJS_14_X,
-      code: lambda.Code.fromAsset('lambda-for-statemachine'),
-      handler: 'greater.handler',
+      code: lambda.Code.fromAsset('lambda-for-functionGreaterThan'),
+      handler: 'index.handler',
       timeout: cdk.Duration.seconds(3),
       environment: {
       }
@@ -51,8 +51,8 @@ export class CdkStatemachineStack extends Stack {
     // Lambda function called if the generated number is less than or equal to the expected number
     const functionLessThanOrEqual = new lambda.Function(this, "NumberLessThan", {
       runtime: lambda.Runtime.NODEJS_14_X,
-      code: lambda.Code.fromAsset('lambda-for-statemachine'),
-      handler: 'lessOrEqual.handler',
+      code: lambda.Code.fromAsset('lambda-for-functionLessThanOrEqual'),
+      handler: 'index.handler',
       timeout: cdk.Duration.seconds(3),
       environment: {
       }
