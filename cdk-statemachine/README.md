@@ -9,7 +9,7 @@
 
 ## 설치 방법
 
-아래와 같이 git repository를 다운로드 하여 [AWS CDK](https://github.com/kyopark2014/technical-summary/blob/main/cdk-introduction.md)로 인프라를 생성합니다. 
+아래와 같이 [git repository](https://github.com/kyopark2014/aws-step-functions)를 다운로드 하여 [AWS CDK](https://github.com/kyopark2014/technical-summary/blob/main/cdk-introduction.md)로 인프라를 생성합니다. 
 
 ```c
 $ git clone https://github.com/kyopark2014/aws-step-functions
