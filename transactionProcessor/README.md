@@ -127,8 +127,113 @@ https://ap-northeast-2.console.aws.amazon.com/states/home?region=ap-northeast-2#
 
 - TaskSucceeded
 
-```j
-- TaskSucceededa
+```java
+{
+  "resourceType": "dynamodb",
+  "resource": "putItem",
+  "output": {
+    "SdkHttpMetadata": {
+      "AllHttpHeaders": {
+        "Server": [
+          "Server"
+        ],
+        "Connection": [
+          "keep-alive"
+        ],
+        "x-amzn-RequestId": [
+          "CRVLF46AGC9LO1RO98GN0S2T07VV4KQNSO5AEMVJF66Q9ASUAAJG"
+        ],
+        "x-amz-crc32": [
+          "2745614147"
+        ],
+        "Content-Length": [
+          "2"
+        ],
+        "Date": [
+          "Sun, 19 Jun 2022 01:19:35 GMT"
+        ],
+        "Content-Type": [
+          "application/x-amz-json-1.0"
+        ]
+      },
+      "HttpHeaders": {
+        "Connection": "keep-alive",
+        "Content-Length": "2",
+        "Content-Type": "application/x-amz-json-1.0",
+        "Date": "Sun, 19 Jun 2022 01:19:35 GMT",
+        "Server": "Server",
+        "x-amz-crc32": "2745614147",
+        "x-amzn-RequestId": "CRVLF46AGC9LO1RO98GN0S2T07VV4KQNSO5AEMVJF66Q9ASUAAJG"
+      },
+      "HttpStatusCode": 200
+    },
+    "SdkResponseMetadata": {
+      "RequestId": "CRVLF46AGC9LO1RO98GN0S2T07VV4KQNSO5AEMVJF66Q9ASUAAJG"
+    }
+  },
+  "outputDetails": {
+    "truncated": false
+  }
+}
+```
+
+- ExecutionSucceeded
+
+```java
+{
+  "output": {
+    "TransactionId": "abcde1234",
+    "DynamoDB": {
+      "SdkHttpMetadata": {
+        "AllHttpHeaders": {
+          "Server": [
+            "Server"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "x-amzn-RequestId": [
+            "CRVLF46AGC9LO1RO98GN0S2T07VV4KQNSO5AEMVJF66Q9ASUAAJG"
+          ],
+          "x-amz-crc32": [
+            "2745614147"
+          ],
+          "Content-Length": [
+            "2"
+          ],
+          "Date": [
+            "Sun, 19 Jun 2022 01:19:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.0"
+          ]
+        },
+        "HttpHeaders": {
+          "Connection": "keep-alive",
+          "Content-Length": "2",
+          "Content-Type": "application/x-amz-json-1.0",
+          "Date": "Sun, 19 Jun 2022 01:19:35 GMT",
+          "Server": "Server",
+          "x-amz-crc32": "2745614147",
+          "x-amzn-RequestId": "CRVLF46AGC9LO1RO98GN0S2T07VV4KQNSO5AEMVJF66Q9ASUAAJG"
+        },
+        "HttpStatusCode": 200
+      },
+      "SdkResponseMetadata": {
+        "RequestId": "CRVLF46AGC9LO1RO98GN0S2T07VV4KQNSO5AEMVJF66Q9ASUAAJG"
+      }
+    }
+  },
+  "outputDetails": {
+    "truncated": false
+  }
+}
+```
+
+4) DyanmoDB console에서 아래와 같이 Step Function이 write한 Item을 확인 할 수 있습니다. 
+
+![noname](https://user-images.githubusercontent.com/52392004/174462130-dd9d544d-3422-4bf1-8602-0f12e270f7d2.png)
+
 
 
 
