@@ -1,4 +1,4 @@
-# Welcome to your CDK TypeScript project
+# CDK를 이용하여 Lambda를 포함한 Step Function 생성
 
 여기에서는 [AWS TypeScript CDK and Step Functions](https://aws.plainenglish.io/aws-typescript-cdk-and-step-functions-bbc173333aed)를 활용하여 cdk로 step functions을 구현한 예제를 설명합니다.
 
