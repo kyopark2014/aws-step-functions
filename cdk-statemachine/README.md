@@ -119,6 +119,28 @@ CDK로 생성된 step function의 graph는 아래와 같습니다.
 }
 ```
 
+## 실행결과
+
+### Step Functions에서 실행 
+
+CDK로 설치후 아래와 같은 State machine이 생성됩니다.
+
+![image](https://user-images.githubusercontent.com/52392004/174482322-ac19214a-537a-4802-90ac-066eaec7c8f0.png)
+
+[randomNumberStateMachine]에서 [Start Execution]을 합니다. 이후 Input에 아래 값을 붙여넣기 하고 [Start execution]을 선택합니다. 
+
+```java
+{
+  "maxNumber": 10,
+  "numberToCheck": 7
+}
+```
+
+![noname](https://user-images.githubusercontent.com/52392004/174482548-3d6f9402-0259-47a0-872d-85d82db0966a.png)
+
+
+![image](https://user-images.githubusercontent.com/52392004/174482257-d8e6928e-ecb9-4e6f-9a45-6f88359fe126.png)
+
 
 
 ## Reference
