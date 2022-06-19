@@ -35,7 +35,7 @@ https://ap-northeast-2.console.aws.amazon.com/states/home?region=ap-northeast-2#
                 "dynamodb:DeleteItem"
             ],
             "Resource": [
-                "arn:aws:dynamodb:ap-northeast-2:677146750822:table/TransactionHistoryTable"
+                "arn:aws:dynamodb:ap-northeast-2:123456789012:table/TransactionHistoryTable"
             ]
         },
         {
