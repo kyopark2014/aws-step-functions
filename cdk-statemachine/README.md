@@ -1,6 +1,11 @@
 # CDK를 이용하여 Lambda를 포함한 Step Function 생성
 
-여기에서는 [AWS TypeScript CDK and Step Functions](https://aws.plainenglish.io/aws-typescript-cdk-and-step-functions-bbc173333aed)를 활용하여 cdk로 step functions을 구현한 예제를 설명합니다.
+여기에서는 [AWS TypeScript CDK and Step Functions](https://aws.plainenglish.io/aws-typescript-cdk-and-step-functions-bbc173333aed)를 활용하여 cdk로 step functions을 구현한 예제를 설명합니다. 
+
+전체적인 Architecture는 아래와 같습니다. 사용자는 API Gateway를 이용해 RESTful API로 Step Functions에 요청을하게 됩니다. Step Functions에는 3개의 Lambda를 가지고 처리후 응답을 전달합니다. 
+
+<img width="863" alt="image" src="https://user-images.githubusercontent.com/52392004/174484145-a49d2c9b-3fd4-45c0-b89d-6c6acee5b168.png">
+
 
 ## 설치 방법
 
