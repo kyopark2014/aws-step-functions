@@ -169,7 +169,7 @@ CDK로 설치후 아래와 같은 State machine이 생성됩니다.
 }
 ```
 
-### Curl로 시험하기
+### Curl로 REST API를 이용하여 Step Function 시험하기
 
 API Gateway를 이용하여 Step Functions을 호출하였으므로 아래와 같이 Curl로 결과를 확인 할 수 있습니다. 
 
