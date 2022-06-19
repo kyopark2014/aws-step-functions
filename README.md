@@ -20,6 +20,9 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 [CDK - Step Functions](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/README.md)에서는 AWS CDK로 Step Function과 API Gateway를 생성하여 https API로 Step Function을 호출할 수 있음을 보여줍니다. 
 
+## Step Functions으로 DynamoDB에 쓰기
+
+[Step Functions - DynamoDB](https://github.com/kyopark2014/aws-step-functions/tree/main/transactionProcessor)는 Step Functions로 DynamoDB를 쓰는 예제입니다. 
 
 ## Summary
 
