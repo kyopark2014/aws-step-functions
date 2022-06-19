@@ -1,6 +1,6 @@
 {
     "Comment": "Transaction Processor State Machine",
-    "StartAt": "PrcessTransaction",
+    "StartAt": "ProcessTransaction",
     "States":{
         "ProcessTransaction": {
             "Type": "Pass",
