@@ -19,12 +19,7 @@ $ cdk deploy
 
 ## Step Functions
 
-CDK로 생성된 step function의 graph는 아래와 같습니다.
-
-![image](https://user-images.githubusercontent.com/52392004/174481191-1d46baaa-7fa5-4e0f-91a1-857fbe9885bc.png)
-
-
-상세한 구성은 아래와 같습니다. 
+CDK로 생성된 Step Functions의 구성은 아래와 같습니다. 
 
 ```java
 {
@@ -123,6 +118,11 @@ CDK로 생성된 step function의 graph는 아래와 같습니다.
   "TimeoutSeconds": 300
 }
 ```
+
+이때의 step function graph는 아래와 같습니다.
+
+![image](https://user-images.githubusercontent.com/52392004/174481191-1d46baaa-7fa5-4e0f-91a1-857fbe9885bc.png)
+
 
 ## 실행결과
 
