@@ -69,7 +69,66 @@ https://ap-northeast-2.console.aws.amazon.com/states/home?region=ap-northeast-2#
 ![noname](https://user-images.githubusercontent.com/52392004/174461925-f9a15dde-c94f-45b8-839e-ffcbe8774e43.png)
 
 
+## 실행 결과 
 
+1) [Start execution]을 선택하여 실행화면으로 이동합니다.
+
+2) 아래와 같이 "Input"에 아래와 같이 입력합니다. 
+
+```java
+{
+    "TransactionId": "abcde1234"
+}
+```
+
+입력 화면은 아래와 같습니다.
+
+![noname](https://user-images.githubusercontent.com/52392004/174462033-c7e1ab12-1972-4312-b5ef-fc2ea52b240a.png)
+
+3) 실행후 결과는 아래와 같습니다. 
+
+![image](https://user-images.githubusercontent.com/52392004/174462042-46087f8e-cc09-462e-8be9-b755d74d1b6f.png)
+
+여기서 각 단계의 history는 아래와 같습니다.
+
+- ExecutionStarted
+
+```java
+{
+  "input": {
+    "TransactionId": "abcde1234"
+  },
+  "inputDetails": {
+    "truncated": false
+  },
+  "roleArn": "arn:aws:iam::1234567890:role/aws-step-functions-dynamodb"
+}
+```
+
+- TaskScheduled
+
+```java
+{
+  "resourceType": "dynamodb",
+  "resource": "putItem",
+  "region": "ap-northeast-2",
+  "parameters": {
+    "TableName": "TransactionHistoryTable",
+    "Item": {
+      "TransactionId": {
+        "S": "abcde1234"
+      }
+    }
+  },
+  "timeoutInSeconds": null,
+  "heartbeatInSeconds": null
+}
+```
+
+- TaskSucceeded
+
+```j
+- TaskSucceededa
 
 
 
