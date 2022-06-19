@@ -19,7 +19,13 @@ https://ap-northeast-2.console.aws.amazon.com/states/home?region=ap-northeast-2#
 
 4) [Define state machine]에서 [Write your workflow in code]를 선택후 Definition에 [transaction.json](https://github.com/kyopark2014/aws-step-functions/blob/main/transactionProcessor/transaction.json)을 아래와 같이 붙여 넣기 하여 줍니다. 이후 [Next]를 선택합니다.
 
-![image](https://user-images.githubusercontent.com/52392004/174461586-e439ed63-dd27-4a62-ae7d-6408a08e35bb.png)
+
+![noname](https://user-images.githubusercontent.com/52392004/174462192-65b247ea-82aa-4ffd-ad79-b9ec06b73e69.png)
+
+
+
+
+
 
 5) Permissions는 [Create new role]을 선택합니다. 
 
