@@ -136,12 +136,33 @@ CDK로 설치후 아래와 같은 State machine이 생성됩니다.
 }
 ```
 
+입력후 화면은 아래와 같습니다. 
+
 ![noname](https://user-images.githubusercontent.com/52392004/174482548-3d6f9402-0259-47a0-872d-85d82db0966a.png)
 
+실행하면 아래처럼 실행됩니다. 
 
 ![image](https://user-images.githubusercontent.com/52392004/174482257-d8e6928e-ecb9-4e6f-9a45-6f88359fe126.png)
 
+이때, Lambda에 전달된 값은 아래와 같습니다 .
 
+```java
+{
+  "resourceType": "lambda",
+  "resource": "invoke",
+  "region": "ap-northeast-2",
+  "parameters": {
+    "FunctionName": "arn:aws:lambda:ap-northeast-2:123456789012:function:CdkStatemachineStack-NumberLessThan313431AA-VBEhV5kIcDiH",
+    "Payload": {
+      "generatedRandomNumber": 2,
+      "maxNumber": 10,
+      "numberToCheck": 7
+    }
+  },
+  "timeoutInSeconds": null,
+  "heartbeatInSeconds": null
+}
+```
 
 ## Reference
 
