@@ -18,7 +18,9 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 [CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/tree/main/cloudformation)를 따라서 CloudFormation으로 인프라 생성이 가능합니다.
 
-[CDK - Step Functions](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/README.md)에서는 AWS CDK로 Step Function과 API Gateway를 생성하여 https API로 Step Function을 호출할 수 있음을 보여줍니다. 
+[CDK - Step Functions](https://github.com/kyopark2014/aws-step-functions/blob/main/cdk-stepfunctions/README.md)에서는 [AWS CDK](https://github.com/kyopark2014/technical-summary/blob/main/cdk-introduction.md)로 Step Function과 API Gateway를 생성하여 https API로 Step Function을 호출할 수 있음을 보여줍니다. 
+
+[CDK를 이용하여 Lambda를 포함한 Step Function 생성](https://github.com/kyopark2014/aws-step-functions/tree/main/cdk-statemachine)에서는 3개의 Lambda를 이용해 구현한 Step Function 입니다. 
 
 ## Step Functions으로 DynamoDB에 Item 저장하기
 
