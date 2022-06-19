@@ -164,6 +164,65 @@ CDK로 설치후 아래와 같은 State machine이 생성됩니다.
 }
 ```
 
+### Curl로 시험하기
+
+API Gateway를 이용하여 Step Functions을 호출하였으므로 아래와 같이 Curl로 결과를 확인 할 수 있습니다. 
+
+```c
+curl -X POST https://w9xfvkrfgg.execute-api.ap-northeast-2.amazonaws.com/prod/ \
+ -d '{"maxNumber":10, "numberToCheck":7}' \
+ -H 'Content-Type: application/json'
+{
+   "ExecutedVersion":"$LATEST",
+   "Payload":{
+      "msg":"lessOrEqual"
+   },
+   "SdkHttpMetadata":{
+      "AllHttpHeaders":{
+         "X-Amz-Executed-Version":[
+            "$LATEST"
+         ],
+         "x-amzn-Remapped-Content-Length":[
+            "0"
+         ],
+         "Connection":[
+            "keep-alive"
+         ],
+         "x-amzn-RequestId":[
+            "972b2b5a-1279-4de3-a74e-2a9592fada17"
+         ],
+         "Content-Length":[
+            "21"
+         ],
+         "Date":[
+            "Sun, 19 Jun 2022 13:34:06 GMT"
+         ],
+         "X-Amzn-Trace-Id":[
+            "root=1-62af25cc-1676e78d532c29865c4f438c;parent=5b3200a776ec860a;sampled=1"
+         ],
+         "Content-Type":[
+            "application/json"
+         ]
+      },
+      "HttpHeaders":{
+         "Connection":"keep-alive",
+         "Content-Length":"21",
+         "Content-Type":"application/json",
+         "Date":"Sun, 19 Jun 2022 13:34:06 GMT",
+         "X-Amz-Executed-Version":"$LATEST",
+         "x-amzn-Remapped-Content-Length":"0",
+         "x-amzn-RequestId":"972b2b5a-1279-4de3-a74e-2a9592fada17",
+         "X-Amzn-Trace-Id":"root=1-62af25cc-1676e78d532c29865c4f438c;parent=5b3200a776ec860a;sampled=1"
+      },
+      "HttpStatusCode":200
+   },
+   "SdkResponseMetadata":{
+      "RequestId":"972b2b5a-1279-4de3-a74e-2a9592fada17"
+   },
+   "StatusCode":200
+}
+```
+
 ## Reference
 
 [AWS TypeScript CDK and Step Functions](https://aws.plainenglish.io/aws-typescript-cdk-and-step-functions-bbc173333aed)
