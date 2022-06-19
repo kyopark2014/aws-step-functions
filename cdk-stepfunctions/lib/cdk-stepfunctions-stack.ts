@@ -21,5 +21,10 @@ export class CdkStepfunctionsStack extends Stack {
     const api = new apigateway.StepFunctionsRestApi(this, 'StepFunctionsRestApi', { 
       stateMachine: stateMachine 
     });
+
+    new cdk.CfnOutput(this, 'apiUrl', {
+      value: api.url,
+      description: 'The url of API Gateway',
+    });
   }
 }

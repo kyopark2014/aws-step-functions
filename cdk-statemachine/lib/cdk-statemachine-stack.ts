@@ -8,7 +8,6 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as sfn from 'aws-cdk-lib/aws-stepfunctions';
 import * as tasks from 'aws-cdk-lib/aws-stepfunctions-tasks';
 
-
 export class CdkStatemachineStack extends Stack {
   public Machine: sfn.StateMachine;
 
@@ -81,10 +80,20 @@ export class CdkStatemachineStack extends Stack {
       .next(numberChoice);
 
     //Create the statemachine
-    this.Machine = new sfn.StateMachine(this, "StateMachine", {
+    this.Machine = new sfn.StateMachine(this, "StateMachineRandomNumber", {
       definition,
       stateMachineName: 'randomNumberStateMachine',
+      stateMachineType: sfn.StateMachineType.EXPRESS,
       timeout: cdk.Duration.minutes(5),
     }); 
+
+    const api = new apigateway.StepFunctionsRestApi(this, 'StepFunctionsRestApi', { 
+      stateMachine: this.Machine 
+    });
+
+    new cdk.CfnOutput(this, 'apiUrl', {
+      value: api.url,
+      description: 'The url of API Gateway',
+    });
   } 
 }
