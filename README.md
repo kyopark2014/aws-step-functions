@@ -13,8 +13,9 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 [Step Function Case Study](https://github.com/kyopark2014/aws-step-functions/blob/main/case-study.md)에서는 Step Fucntions 활용방안에 대해 설명합니다. 
 
+[Wait for Callback](https://github.com/kyopark2014/aws-step-functions/tree/main/Wait-for-Callback)에 대한 예제입니다. 
 
-## 인프라 생성하기 
+## IaC를 이용한 인프라 생성하기 
 
 [CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/tree/main/cloudformation)를 따라서 CloudFormation으로 인프라 생성이 가능합니다.
 
