@@ -2,7 +2,7 @@
 
 ## CloudFormation
 
-[CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/README.md)을 참조하여 [Module 4 - Wait for a Callback with the Task Token](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)로 아래와 같이 Lambda, SQS, SNS, Step Function을 생성합니다. 
+[CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/README.md)을 참조하여 [Module_4.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)로 아래와 같이 Lambda, SQS, SNS, Step Function을 생성합니다. 
 
 ## SQS 
 
