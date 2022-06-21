@@ -8,7 +8,11 @@
 
 ![image](https://user-images.githubusercontent.com/52392004/174910047-90a39cdb-2454-4696-9ab4-2192ae855762.png)
 
-## SendTaskSuccess and 
+## Context Object
+
+[Context Object](https://docs.aws.amazon.com/step-functions/latest/dg/input-output-contextobject.html)
+
+## Task 실행 결과의 리턴
 
 external process(사람의 승인 등)이 끝났을때 결과를 리턴하거나 멈춰졌던 workflow를 재실행하는 용도로 사용합니다. 여기에는 [SendTaskSuccess](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html)와 SendTaskFailure이 있습니다. 
 
