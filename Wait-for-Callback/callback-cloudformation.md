@@ -17,7 +17,7 @@ WaitForCallbackStateMachine를 그래프로 표현하면 아래와 같습니다.
 
 ![image](https://user-images.githubusercontent.com/52392004/174436885-8d71ae5d-f506-4ded-8e85-57fbea6b8b49.png)
 
-여기서 WaitForCallbackStateMachine은 아래와 같은 Amazon States Language (ASL)로 표현됩니다. 
+여기서 WaitForCallbackStateMachine은 아래와 같은 [Amazon States Language (ASL)](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html)로 표현됩니다. 
 
 [Start]하면 SQS Task인 "Start Task And Wait For Callback"에서 시작합니다. 이것은 메시지와 Token을 받을때까지 대기하다가 메시지를 받으면 "Notify Success" State로 이동합니다. 
 
