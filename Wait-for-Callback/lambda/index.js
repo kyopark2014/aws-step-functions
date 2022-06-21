@@ -4,7 +4,7 @@ var AWS = require('aws-sdk');
 var stepfunctions = new AWS.StepFunctions({apiVersion: '2016-11-23'});
 
 exports.lambda_handler = async(event, context, callback) => {
-    console.log("event: %j", event)
+    console.log("event: %j", event) 
 
     for (let i=0;i<event.Records.length;i++) {
         let record = event.Records[i];
