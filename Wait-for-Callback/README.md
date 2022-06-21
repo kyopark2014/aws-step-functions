@@ -8,6 +8,41 @@
 
 ![image](https://user-images.githubusercontent.com/52392004/174910047-90a39cdb-2454-4696-9ab4-2192ae855762.png)
 
+## SendTaskSuccess and 
+
+external process(사람의 승인 등)이 끝났을때 결과를 리턴하거나 멈춰졌던 workflow를 재실행하는 용도로 사용합니다. 여기에는 [SendTaskSuccess](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html)와 SendTaskFailure이 있습니다. 
+
+### SendTaskSuccess 호출방법
+
+[성공시 결과를 리턴](https://docs.aws.amazon.com/step-functions/latest/apireference/API_SendTaskSuccess.html)하는 방법은 아래와 같습니다. 
+
+```java
+var params = {
+  output: 'STRING_VALUE', /* required */
+  taskToken: 'STRING_VALUE' /* required */
+};
+stepfunctions.sendTaskSuccess(params, function(err, data) {
+  if (err) console.log(err, err.stack); // an error occurred
+  else     console.log(data);           // successful response
+});
+```
+
+### sendTaskFailure 호출방법 
+
+[실패시 결과를 리턴](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/StepFunctions.html#sendTaskFailure-property)하는 방법은 아래와 같습니다. 
+
+```java
+var params = {
+  taskToken: 'STRING_VALUE', /* required */
+  cause: 'STRING_VALUE',
+  error: 'STRING_VALUE'
+};
+stepfunctions.sendTaskFailure(params, function(err, data) {
+  if (err) console.log(err, err.stack); // an error occurred
+  else     console.log(data);           // successful response
+});
+```
+
 ## Workflow
 
 [CloudFormation을 이용하여 Step Function으로 Callback 구현](https://github.com/kyopark2014/aws-step-functions/blob/main/Wait-for-Callback/callback-cloudformation.md)에서 상세 동작에 대해 설명하고 있습니다. 이때 생성된 Workflow는 아래와 같습니다.
