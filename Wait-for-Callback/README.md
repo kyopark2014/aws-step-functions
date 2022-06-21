@@ -1,6 +1,6 @@
 # Wait for Callback
 
-어떤 task는 사람의 승인(human approval)이 필요 할 수 있고, 또는 lagacy system에서 호출될 때 실행되어지도록 하려면, 요청이 올때까지 기다려야 할 수 있습니다. [Wait for a Callback with the Task Token](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token)와 같이 Token이 도착할때까지 workflow를 기다리게 할 수 있습니다. 여기서는 [Workshop Module 4 - Wait for a Callback with the Task Token](https://catalog.workshops.aws/stepfunctions/en-US/module-4)를 참조하여 Wait for Callbackdmf 구현하는 방법에 대해 소개합니다. 상세한것은 [Optimized integrations for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html)을 참조하십시요. 
+어떤 task는 사람의 승인(human approval)이 필요 할 수 있고, 또는 lagacy system에서 호출될 때 실행되어지도록 하려면, 요청이 올때까지 기다려야 할 수 있습니다. [Wait for a Callback with the Task Token](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token)와 같이 Token이 도착할때까지 workflow를 기다리게 할 수 있습니다. 여기서는 [Workshop Module 4 - Wait for a Callback with the Task Token](https://catalog.workshops.aws/stepfunctions/en-US/module-4)를 참조하여 Wait for Callback을 구현하는 방법에 대해 소개합니다. 상세한것은 [Optimized integrations for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html)을 참조하십시요. 
 
 - [Wait for a job to complete (.sync).](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-sync)
 
