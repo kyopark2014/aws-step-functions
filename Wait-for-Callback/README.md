@@ -6,6 +6,8 @@
 
 - [Wait for a task token (.waitForTaskToken).](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token)
 
+![image](https://user-images.githubusercontent.com/52392004/174910047-90a39cdb-2454-4696-9ab4-2192ae855762.png)
+
 ## Workflow
 
 [CloudFormation을 이용하여 Step Function으로 Callback 구현](https://github.com/kyopark2014/aws-step-functions/blob/main/Wait-for-Callback/callback-cloudformation.md)에서 상세 동작에 대해 설명하고 있습니다. 이때 생성된 Workflow는 아래와 같습니다.
