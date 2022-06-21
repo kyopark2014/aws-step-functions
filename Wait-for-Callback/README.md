@@ -14,13 +14,32 @@
 
 ![image](https://user-images.githubusercontent.com/52392004/174722275-16a404e4-4f0d-4a1e-b750-e8489dec90f0.png)
 
+"Start Task And Wait For Callback"의 경우에 SQS로서 Message를 받을때까지 기다리다가, 메시지를 받아서 token이 있으면, "Notify Success"를 호출합니다. 실패하면 "Notify Failure"을 호출합니다.
 
-1) 아래와 같이 "WaitforCallbackStateMachine"에서 State machine이 "Wait for Callback"으로 SQS에 메시지를 전송합니다. 
+```java
+    "Start Task And Wait For Callback": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sqs:sendMessage.waitForTaskToken",
+      "Parameters": {
+        "QueueUrl": "https://sqs.ap-northeast-2.amazonaws.com/123456789012/module4-SQSQueue-THCygijktbGh",
+        "MessageBody": {
+          "MessageTitle": "Task started by Step Functions. Waiting for callback with task token.",
+          "TaskToken.$": "$$.Task.Token"
+        }
+      },
+      "Next": "Notify Success",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "Notify Failure"
+        }
+      ]
+    },
+```
 
-2) 이때 SQS는 메시지와 Token을 Lambda 함수에 전달합니다. 
-
-![image](https://user-images.githubusercontent.com/52392004/174439241-118d6aef-f5f1-4995-bbb4-276e2ff4587e.png)
-
+"Notify Success"와 "Notify Failure"은 실패/성공 메시지를 SNS로 전송합니다. 
 
 
 
