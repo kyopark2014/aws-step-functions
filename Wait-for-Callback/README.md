@@ -1,6 +1,6 @@
 # Wait for Callback
 
-여기서는 [Module 4 - Wait for a Callback with the Task Token](https://catalog.workshops.aws/stepfunctions/en-US/module-4)에 대해 소개합니다.
+여기서는 [Workshop Module 4 - Wait for a Callback with the Task Token](https://catalog.workshops.aws/stepfunctions/en-US/module-4)를 참조하여 Wait for Callbackdmf 구현하는 방법에 대해 소개합니다.
 
 어떤 task는 사람의 승인(human approval)이 필요할 수 있고, 또는 lagacy system에서 호출될때 실행되어지도록 하려면, 응답을 바로 받지 못하고 기다려야 할 수 있습니다. 이와 같이 task는 "SendTaskSuccess" 또는 "SendTaskFailure"로 token을 받을때까지 기다립니다. 상세한것은 [Optimized integrations for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html)을 참조하십시요. 
 
