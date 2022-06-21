@@ -72,12 +72,12 @@ WaitForCallbackStateMachine를 그래프로 표현하면 아래와 같습니다.
 
 ## Lambda 
 
-SQS는 Lambda를 Trigger 합니다. 
+CloudFormation에 의해 생성된 Lambda는 SQS에 메시지가 수신이 되면 trigger 됩니다. 
 
 ![image](https://user-images.githubusercontent.com/52392004/174436686-688f8aaa-0717-452d-8fae-762e1dbad5b9.png)
 
 
-CloudFormation 소스인 [Module_4.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)에서 Lambda code를 아래와 같이 좀더 많은 로그를 볼 수 있도록 수정하였습니다. 
+좀 더 자세히 로그를 볼수 있도록 CloudFormation 소스인 [Module_4.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)에서 Lambda code를 아래와 같이 좀더 많은 로그를 볼 수 있도록 수정하였습니다. 
 
 event를 받으면 Record에서 token을 꺼내서 message와 함게 parameter로 Step Functions에 전달합니다. 
 
