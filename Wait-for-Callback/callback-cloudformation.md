@@ -79,7 +79,7 @@ CloudFormation에 의해 생성된 Lambda는 SQS에 메시지가 수신이 되�
 
 좀 더 자세히 로그를 볼수 있도록 CloudFormation 소스인 [Module_4.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)에서 Lambda code를 아래와 같이 좀더 많은 로그를 볼 수 있도록 수정하였습니다. 
 
-event를 받으면 Record에서 token을 꺼내서 message와 함게 parameter로 Step Functions에 전달합니다. 
+event를 받으면 Record에서 token을 꺼내서 message와 함게 parameter로 성공리포트를 sendTaskSucces를 이용해 Step Functions에 전달합니다. 
 
 ```java
 console.log('Loading function');
