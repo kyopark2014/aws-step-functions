@@ -1,12 +1,19 @@
 # Wait for Callback
 
-어떤 task는 사람의 승인(human approval)이 필요 할 수 있고, 또는 lagacy system에서 호출될 때 실행되어지도록 하려면, 요청이 올때까지 기다려야 할 수 있습니다. [Wait for a Callback with the Task Token](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token)와 같이 Token이 도착할때까지 workflow를 기다리게 할 수 있습니다. 여기서는 [Workshop Module 4 - Wait for a Callback with the Task Token](https://catalog.workshops.aws/stepfunctions/en-US/module-4)를 참조하여 Wait for Callback을 구현하는 방법에 대해 소개합니다. 상세한것은 [Optimized integrations for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html)을 참조하십시요. 
+어떤 task는 사람의 승인(human approval)이나 lagacy system에서 응답이 올때까지 기다려야 할 수 있습니다. [Wait for a Callback with the Task Token](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token) 패턴을 이용하면, 실행중인 workflow를 기다리게 할 수 있습니다. 여기서는 [Workshop Module 4 - Wait for a Callback with the Task Token](https://catalog.workshops.aws/stepfunctions/en-US/module-4)를 참조하여 Wait for Callback을 구현하는 방법에 대해 소개합니다. 상세한것은 [Optimized integrations for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html)을 참조하십시요. 
 
-- [Wait for a job to complete (.sync).](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-sync)
+## Step function에서 "Wait for callback"을 enable하는 방법
+
+1) Work studio에서 아래와 같이 option을 enable 할 수 있습니다. 
+
+![noname](https://user-images.githubusercontent.com/52392004/174918743-d8bdf8d3-3342-4d3e-93b5-549a50919a7d.png)
+
+2) SQS resource 정의시에 ".waitForTaskToken"을 추가하는 방법으로 enable 할 수 있습니다.
 
 - [Wait for a task token (.waitForTaskToken).](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token)
 
-![image](https://user-images.githubusercontent.com/52392004/174910047-90a39cdb-2454-4696-9ab4-2192ae855762.png)
+- [Wait for a job to complete (.sync).](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-sync)
+
 
 ## Step function 실행시 Context Object의 Task.Token
 
