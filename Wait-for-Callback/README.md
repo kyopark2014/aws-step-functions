@@ -8,9 +8,33 @@
 
 ![image](https://user-images.githubusercontent.com/52392004/174910047-90a39cdb-2454-4696-9ab4-2192ae855762.png)
 
-## Context Object
+## Step function 실행시 Context Object의 Task.Token
 
-[Context Object](https://docs.aws.amazon.com/step-functions/latest/dg/input-output-contextobject.html)
+[Context Object](https://docs.aws.amazon.com/step-functions/latest/dg/input-output-contextobject.html)는 아래와 같은 형태로 구성됩니다. 
+
+{
+    "Execution": {
+        "Id": "arn:aws:states:us-east-1:123456789012:execution:stateMachineName:executionName",
+        "Input": {
+           "key": "value"
+        },
+        "Name": "executionName",
+        "RoleArn": "arn:aws:iam::123456789012:role...",
+        "StartTime": "2019-03-26T20:14:13.192Z"
+    },
+    "State": {
+        "EnteredTime": "2019-03-26T20:14:13.192Z",
+        "Name": "Test",
+        "RetryCount": 3
+    },
+    "StateMachine": {
+        "Id": "arn:aws:states:us-east-1:123456789012:stateMachine:stateMachineName",
+        "Name": "name"
+    },
+    "Task": {
+        "Token": "h7XRiCdLtd/83p1E0dMccoxlzFhglsdkzpK9mBVKZsp7d9yrT1W"
+    }
+}
 
 ## Task 실행 결과의 리턴
 
