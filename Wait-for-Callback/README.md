@@ -91,7 +91,7 @@ SQS에서 "Wait-for-Callback"을 enable 할 경우에 아래와 같은 workflow�
 
 "Start Task And Wait For Callback"에서 SQS로 Task.Token을 보내면, Lambda가 Trigger되어서 어떤 Job을 수행하고, Lambda가 Step Function으로 결과를 리턴하면, 결과에 따라서 "Notify Success"나 "Notify failure"가 호출합니다. "Notify Success"와 "Notify Failure"에서는 SNS로 각각 성공 또는 실패 메시지를 전송하고 있습니다. 
 
-상세한 [CloudFormation을 이용하여 Step Function으로 Callback 구현](https://github.com/kyopark2014/aws-step-functions/blob/main/Wait-for-Callback/callback-cloudformation.md)에서 상세 동작에 대해 설명하고 있습니다. 
+상세한 내용은 [CloudFormation을 이용하여 Step Function으로 Callback 구현](https://github.com/kyopark2014/aws-step-functions/blob/main/Wait-for-Callback/callback-cloudformation.md)에서 설명하고 있습니다. 
 
 
 ## Task Token Example
