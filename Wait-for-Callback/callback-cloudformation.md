@@ -1,14 +1,16 @@
 # CloudFormation을 이용하여 Step Function으로 Callback 구현
 
-## CloudFormation
 
-[CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/README.md)을 참조하여 [Module_4.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)로 아래와 같이 Lambda, SQS, SNS, Step Function을 생성합니다. 
+## Wait-for-Callback 기본 동작
 
-Step Function이 실행되면, SQS로 Task.Token를 포함한 메시지를 전송합니다. SQS는 아래와 같이 Lambda를 trigger하는데, 이때 Lambda는 사람의 승인(Human approval)과 같은 동작을 수행하고, 그 결과를 SendTaskSuccess 또는 SendTaskFailure로 다시 step function에 결과를 리턴하게 됩니다. 
+Step Function이 실행되면, SQS로 Task.Token를 포함한 메시지를 전송합니다. SQS는 아래와 같이 Lambda를 trigger하는데, 이때 Lambda는 사람의 승인(Human approval)과 같은 동작을 수행하고, 그 결과를 Task.Token을 이용하여 SendTaskSuccess 또는 SendTaskFailure로 다시 step function에 결과를 리턴하게 됩니다. 
 
 ![image](https://user-images.githubusercontent.com/52392004/174915383-b01e4a85-e1ba-4e2e-a41f-6fa1e8327276.png)
 
 
+## CloudFormation
+
+[CloudFormation으로 Step Functions 만들기](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/README.md)을 참조하여 [Module_4.yml](https://github.com/kyopark2014/aws-step-functions/blob/main/cloudformation/module_4.yml)로 아래와 같이 Lambda, SQS, SNS, Step Function을 생성합니다. 
 
 ## SQS 
 
