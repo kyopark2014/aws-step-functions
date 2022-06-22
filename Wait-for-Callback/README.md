@@ -6,7 +6,9 @@
 
 1) Work studio에서 아래와 같이 option을 enable 할 수 있습니다. 
 
-![noname](https://user-images.githubusercontent.com/52392004/174918743-d8bdf8d3-3342-4d3e-93b5-549a50919a7d.png)
+![noname](https://user-images.githubusercontent.com/52392004/174919275-ff212383-7dfc-4c3a-948b-ee0ec74eeaa6.png)
+
+
 
 2) SQS resource 정의시에 ".waitForTaskToken"을 추가하는 방법으로 enable 할 수 있습니다.
 
