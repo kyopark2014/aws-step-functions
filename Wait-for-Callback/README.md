@@ -2,7 +2,7 @@
 
 어떤 task는 사람의 승인(human approval)이나 lagacy system에서 응답이 올때까지 기다려야 할 수 있습니다. [Wait for a Callback with the Task Token](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-resource.html#connect-wait-token) 패턴을 이용하면, 실행중인 workflow를 기다리게 할 수 있습니다. 여기서는 [Workshop Module 4 - Wait for a Callback with the Task Token](https://catalog.workshops.aws/stepfunctions/en-US/module-4)를 참조하여 Wait for Callback을 구현하는 방법에 대해 소개합니다. 상세한것은 [Optimized integrations for Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-supported-services.html)을 참조하십시요. 
 
-## Step function에서 SQS를 설정 할 때 "Wait for callback"을 enable하는 방법
+## "Wait for callback"을 enable하는 방법
 
 아래에서는 SQS에서 "Wait for callback"을 enable 하고 있습니다. 마찬가지로 SNS, Lambda, S3, DynamoDB등에서 "Wait for callback"을 enable 하고, Task.Token으로 workflow를 관리 할 수 있습니다. 
 
