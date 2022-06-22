@@ -27,7 +27,7 @@ WaitForCallbackStateMachine를 그래프로 표현하면 아래와 같습니다.
 
 여기서 WaitForCallbackStateMachine은 아래와 같은 [Amazon States Language (ASL)](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon-states-language.html)로 표현됩니다. 
 
-[Start]하면 SQS Task인 "Start Task And Wait For Callback"에서 시작합니다. 이때 Lambda로부터 SendTaskSuccess를 받으면 "Notify Success" State로 이동하고, SNS로 "Callback received.."라는 메시지를 전송합니다. 
+[Start]하면 "Start Task And Wait For Callback"에서 시작합니다. 이때 SQS로 Task.Token을 전달하면 이를 바라보고 있는 Lambda가 trigger되고 그 결과를 SendTaskSuccess로 다시 Step Function에 전달합니다. 이후 "Notify Success" State로 이동하고, SNS로 "Callback received.."라는 메시지를 전송합니다. 
 
 ```java
 {
