@@ -22,6 +22,7 @@
 
 [Context Object](https://docs.aws.amazon.com/step-functions/latest/dg/input-output-contextobject.html)는 아래와 같은 형태로 구성됩니다. 
 
+```java
 {
     "Execution": {
         "Id": "arn:aws:states:us-east-1:123456789012:execution:stateMachineName:executionName",
@@ -45,6 +46,7 @@
         "Token": "h7XRiCdLtd/83p1E0dMccoxlzFhglsdkzpK9mBVKZsp7d9yrT1W"
     }
 }
+```
 
 ## Task 실행 결과의 리턴
 
