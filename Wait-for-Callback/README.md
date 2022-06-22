@@ -6,7 +6,7 @@
 
 아래에서는 SQS에서 "Wait for callback"을 enable 하고 있습니다. 마찬가지로 SNS, Lambda, S3, DynamoDB등에서 "Wait for callback"을 enable 하고, Task.Token으로 workflow를 관리 할 수 있습니다. 
 
-1) Work studio에서 아래와 같이 option을 enable 할 수 있습니다. 
+1) Workflow studio에서 아래와 같이 option을 enable 할 수 있습니다. 
 
 ![noname](https://user-images.githubusercontent.com/52392004/174919275-ff212383-7dfc-4c3a-948b-ee0ec74eeaa6.png)
 
