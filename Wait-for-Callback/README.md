@@ -4,6 +4,8 @@
 
 ## Step function에서 SQS를 설정 할 때 "Wait for callback"을 enable하는 방법
 
+아래와 같이 SQS에서 "Wait for callback"을 enable 할 수 있습니다. 마찬가지로 SNS에서도 "Wait for callback"을 enable 할 수 있습니다.
+
 1) Work studio에서 아래와 같이 option을 enable 할 수 있습니다. 
 
 ![noname](https://user-images.githubusercontent.com/52392004/174919275-ff212383-7dfc-4c3a-948b-ee0ec74eeaa6.png)
