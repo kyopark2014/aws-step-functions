@@ -1,7 +1,7 @@
 # CloudFormation을 이용하여 Step Function으로 Callback 구현
 
 
-## Wait-for-Callback 기본 동작
+## Wait-for-Callback 예
 
 Step Function이 실행되면, SQS로 Task.Token를 포함한 메시지를 전송합니다. SQS는 아래와 같이 Lambda를 trigger하는데, 이때 Lambda는 사람의 승인(Human approval)과 같은 동작을 수행하고, 그 결과를 Task.Token을 이용하여 SendTaskSuccess 또는 SendTaskFailure로 다시 step function에 결과를 리턴하게 됩니다. 
 
