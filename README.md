@@ -30,9 +30,30 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 ## S3 Trigger
 
-![image](https://user-images.githubusercontent.com/52392004/210667048-28e036ba-6822-4b4c-8f0a-356986602c6f.png)
+[S3 bucket에서 발생하는 Event Notification을 Step function과 연결](https://docs.aws.amazon.com/solutions/latest/constructs/aws-s3-stepfunctions.html)할 수 있습니다. 
+
+이것은 S3 - EventBridge - Step Function로 구성할 수 있습니다. S3 - Lambda - Step Function으로도 구성할 수 있지만, EventBridge를 사용하면 더 flexible하고 cost effective하고 lower latency를 가집니다. 
 
 
+<img src="" width=“800">
+<img src="https://user-images.githubusercontent.com/52392004/210667048-28e036ba-6822-4b4c-8f0a-356986602c6f.png" width="600">
+
+                                                                                                                            
+```java
+                                                                                                                            
+                                                                                                                            import { Construct } from 'constructs';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { S3ToStepfunctions, S3ToStepfunctionsProps } from '@aws-solutions-constructs/aws-s3-stepfunctions';
+import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
+
+const startState = new stepfunctions.Pass(this, 'StartState');
+
+new S3ToStepfunctions(this, 'test-s3-stepfunctions-stack', {
+    stateMachineProps: {
+      definition: startState
+    }
+});
+```                                                                                                                            ```
 
 ## Summary
 
