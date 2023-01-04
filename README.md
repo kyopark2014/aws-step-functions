@@ -35,8 +35,9 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 이것은 S3 - EventBridge - Step Function로 구성할 수 있습니다. S3 - Lambda - Step Function으로도 구성할 수 있지만, EventBridge를 사용하면 더 flexible하고 cost effective하고 lower latency를 가집니다. 
 
 
-<img src="" width=“800">
 <img src="https://user-images.githubusercontent.com/52392004/210667048-28e036ba-6822-4b4c-8f0a-356986602c6f.png" width="600">
+                                                                                                                            
+이를 CDK로는 아래와 같이 구성합니다.                                                                                                                            
                                                                                                                        
 ```java                                                                                                                            
 import { Construct } from 'constructs';
