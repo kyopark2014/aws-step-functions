@@ -27,6 +27,13 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 [Step Functions - DynamoDB](https://github.com/kyopark2014/aws-step-functions/tree/main/transactionProcessor)는 Step Functions로 DynamoDB에 Item 저장하는 예제입니다. 
 
+
+## S3 Trigger
+
+![image](https://user-images.githubusercontent.com/52392004/210667048-28e036ba-6822-4b4c-8f0a-356986602c6f.png)
+
+
+
 ## Summary
 
 
