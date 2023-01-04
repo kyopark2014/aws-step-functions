@@ -37,11 +37,9 @@ AWS Step Functions은 low-code visual workflow service입니다. 즉, 최소한�
 
 <img src="" width=“800">
 <img src="https://user-images.githubusercontent.com/52392004/210667048-28e036ba-6822-4b4c-8f0a-356986602c6f.png" width="600">
-
-                                                                                                                            
-```java
-                                                                                                                            
-                                                                                                                            import { Construct } from 'constructs';
+                                                                                                                       
+```java                                                                                                                            
+import { Construct } from 'constructs';
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { S3ToStepfunctions, S3ToStepfunctionsProps } from '@aws-solutions-constructs/aws-s3-stepfunctions';
 import * as stepfunctions from 'aws-cdk-lib/aws-stepfunctions';
@@ -55,6 +53,7 @@ new S3ToStepfunctions(this, 'test-s3-stepfunctions-stack', {
 });
 ```                                                                                                                            ```
 
+                                                                                                                            
 ## Summary
 
 
