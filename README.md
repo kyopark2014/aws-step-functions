@@ -52,7 +52,7 @@ new S3ToStepfunctions(this, 'test-s3-stepfunctions-stack', {
       definition: startState
     }
 });
-```                                                                                                                            ```
+```                                                                                                                  ```
 
                                                                                                                             
 ## Summary
