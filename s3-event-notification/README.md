@@ -77,4 +77,17 @@ exports.handler = async (event) => {
 
 8. [Design your workflow visualy]를 선택하고 Next를 선택합니다. 
 
+## S3 Brew
 
+[Manage AWS Glue DataBrew Jobs with Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-databrew.html)
+
+```java
+"DataBrew StartJobRun": {
+            "Type": "Task",
+            "Resource": "arn:aws:states:::databrew:startJobRun",
+            "Parameters": {
+               "Name": "sample-proj-job-1"
+            },
+            "Next": "NEXT_STATE"
+          },
+```        
