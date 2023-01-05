@@ -11,7 +11,7 @@
 ```java
 const AWS = require('aws-sdk');
 
-export const handler = async(event) => {
+exports.handler = async (event) => {
     console.log('## EVENT: ' + JSON.stringify(event))
 
     let bucket = event.Records[0].s3.bucket.name;
@@ -53,8 +53,28 @@ export const handler = async(event) => {
 
 ![noname](https://user-images.githubusercontent.com/52392004/210678730-94fc2e9b-c10e-4113-b071-a712be3e87be.png)
 
+5. event를 아래와 같이 선택합니다. 
 
+![noname](https://user-images.githubusercontent.com/52392004/210680277-bdfeb268-20e6-4087-909e-6721370bfbfe.png)
 
+6. 아래와 같이 event를 받을 lambda를 설정합니다.
 
+![noname](https://user-images.githubusercontent.com/52392004/210680480-564edd9c-cff0-4c9a-81dc-449b4457db7c.png)
+
+정상적으로 Lambda가 준비되면 아래와 같이 파일 업로드시 관련 event를 받을수 있습니다.
+
+```java
+2023-01-05T01:30:34.148Z	a24a20de-94ca-4faa-bfff-53f0aae663ba	INFO	Info: 
+{
+    "Bucket": "s3-event-tracker",
+    "Key": "customers.csv"
+}
+```
+
+7. [Configurations] - [State machines]에서 [Create state machine]을 선택합니다. 
+
+![noname](https://user-images.githubusercontent.com/52392004/210681645-edcd2262-7cd8-442f-b1d6-a4642a178a61.png)
+
+8. [Design your workflow visualy]를 선택하고 Next를 선택합니다. 
 
 
